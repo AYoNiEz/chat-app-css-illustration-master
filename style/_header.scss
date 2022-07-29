@@ -1,0 +1,84 @@
+.header{
+    width: 100%;
+    background: linear-gradient(270deg, $LightMagenta , $LightViolet  );
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    
+    
+    .bar{
+        position: absolute;
+        width: 60%;
+        height: 2rem;
+        top: -1rem;
+        background-color: white;
+        margin: auto;
+        border-radius: 2rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .header-box{
+        padding: 0.5rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .back{
+            width: 7px;
+            margin: 0.4rem;
+        }
+        .user{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .profile{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                .avatar{
+                    width: 1.5rem;
+                    border-radius: 50%;
+                    img{
+                        width: 100%;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                    }
+                }
+                .info{
+                    .name{
+                        font-size: 0.7rem;
+                        font-weight: 500;
+                        color: #ffefff;
+                        margin-bottom: 0.1rem;
+                    }
+                    .status{
+                        font-size: 8px;
+                        font-weight: 400;
+                        color: #ffefff;
+                        opacity: 0.4;
+                    }
+                }
+            }
+            .etc{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.1rem;
+                margin-right: 0.5rem;
+                .dot{
+                    background-color: white;
+                    width: 0.2rem;
+                    height: 0.2rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+        
+    }
+}

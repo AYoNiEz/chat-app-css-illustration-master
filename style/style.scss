@@ -1,0 +1,81 @@
+//color
+
+$LightMagenta: hsl(293, 100%, 63%);
+$LightViolet: hsl(264, 100%, 61%);
+$White: hsl(0, 0%, 100%);
+$LightGrayishViolet : hsl(270, 20%, 96%);//(app background)
+$VerDarkDesaturatedViolet: hsl(271, 36%, 24%);// (submit button background)
+$VeryLighMagenta : hsl(289, 100%, 72%);// (submit button background)
+
+@import "mobile";
+@import "header";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+main{
+    width: 100vw;
+    height: auto;
+    background-color: $LightGrayishViolet;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .content{
+        text-align: center;
+        padding: 3rem;
+        h1{
+            color: $VerDarkDesaturatedViolet;
+            font-weight: 500;
+            font-size: 2.4rem;
+            margin-bottom: 1.4rem;
+        }
+        p{
+            font-size: 1rem;
+            color: #9c9ca4;
+            line-height: 1.6rem;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and(min-width: 1000px) {
+    main{
+        height: 100vh;
+        
+        .container{
+            
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            margin: auto;
+            .content{
+                margin-top: 5rem;
+                align-items: center;
+                text-align: unset;
+            }
+            .mobile{
+                
+                .background{
+                    height: 40rem;
+                    border-bottom-right-radius: 15rem;
+                    border-bottom-left-radius: 15rem;
+                    background: linear-gradient(220deg, $LightMagenta 0%, $LightViolet  80%);
+                }
+                .screen{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
